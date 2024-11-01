@@ -20,6 +20,7 @@ def add_task():
             myTasks.append(new_task)
         return redirect(url_for('my_tasks'))
 
+
     return render_template('addTask.html',
                            url_for_tasks=url_for('my_tasks'),
                            url_for_add_task=url_for('add_task'))
