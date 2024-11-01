@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <div>
+        <a href="{{ url_for_tasks }}">Moje tasky</a>
+        <a href="{{ url_for_add_task }}">Přidat úkol</a>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

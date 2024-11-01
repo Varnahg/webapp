@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block title %}Moje Tasky{% endblock %}
+
+{% block content %}
+    <h1>Seznam úkolů</h1>
+    <p>Zde se zobrazí vaše úkoly.</p>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

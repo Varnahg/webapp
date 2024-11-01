@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block title %}Přidat task{% endblock %}
+
+{% block content %}
+    <h1>Přidat task</h1>
+    <form method="post" action="{{ url_for_add_task }}">
+        <label for="task">Task:</label>
+        <input type="text" id="task" name="task">
+        <button type="submit">Přidat</button>
+    </form>
+{% endblock %}
